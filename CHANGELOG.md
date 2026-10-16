@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.0.4
 
 - New variants: Verdula Black, Verdula Gray, Verdula Purple and Verdula Light. Same syntax colors, different backgrounds.
 - New screenshots, generated with `npm run screenshots`.
