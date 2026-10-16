@@ -1,0 +1,15 @@
+{
+  "name": "garden-api",
+  "version": "2.4.1",
+  "private": true,
+  "port": 8080,
+  "samplingRate": 0.25,
+  "database": {
+    "host": "localhost",
+    "user": "verdula",
+    "maxConnections": 20,
+    "ssl": false
+  },
+  "features": ["cache", "metrics", "authentication"],
+  "maintenance": null
+}

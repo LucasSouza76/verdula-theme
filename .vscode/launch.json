@@ -2,22 +2,22 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Testar o tema",
+      "name": "Test the theme",
       "type": "extensionHost",
       "request": "launch",
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}",
-        "${workspaceFolder}/exemplos"
+        "${workspaceFolder}/examples"
       ]
     },
     {
-      "name": "Tirar prints (sem outras extensões)",
+      "name": "Take screenshots (no other extensions)",
       "type": "extensionHost",
       "request": "launch",
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}",
         "--disable-extensions",
-        "${workspaceFolder}/exemplos"
+        "${workspaceFolder}/examples"
       ]
     }
   ]
