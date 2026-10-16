@@ -1,0 +1,56 @@
+/* Estilos de exemplo para o tema Verdula */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root {
+  --fundo: #0d1d15;
+  --texto: #edf5f0;
+  --destaque: #5bd98c;
+  --raio: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+.painel > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem clamp(1rem, 4vw, 3rem);
+}
+
+#principal .botao:hover,
+.botao:focus-visible {
+  background-color: rgba(91, 217, 140, 0.15);
+  outline: 2px solid var(--destaque);
+  transform: translateY(-1px);
+  transition: all 150ms ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .painel > header {
+    flex-direction: column;
+  }
+}
+
+@keyframes brotar {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

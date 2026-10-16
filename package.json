@@ -1,0 +1,49 @@
+{
+  "name": "verdula-theme",
+  "displayName": "Verdula",
+  "description": "Tema escuro verde-floresta, com tons de esmeralda, jade e lima.",
+  "version": "0.0.2",
+  "publisher": "lucassouza",
+  "author": {
+    "name": "Lucas Souza"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#0D1D15",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LucasSouza76/verdula-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasSouza76/verdula-theme/issues"
+  },
+  "homepage": "https://github.com/LucasSouza76/verdula-theme#readme",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "green",
+    "forest",
+    "emerald",
+    "dracula",
+    "verde",
+    "tema escuro"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Verdula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/verdula-color-theme.json"
+      }
+    ]
+  }
+}

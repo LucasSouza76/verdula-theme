@@ -1,0 +1,25 @@
+# Ambiente de desenvolvimento do Jardim
+services:
+  api:
+    build: ./api
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: postgres://verdula:segredo@banco:5432/jardim
+      LOG_LEVEL: debug
+      CACHE_ATIVO: true
+    depends_on:
+      - banco
+    restart: unless-stopped
+
+  banco:
+    image: postgres:16-alpine
+    volumes:
+      - dados:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U verdula"]
+      interval: 10s
+      retries: 5
+
+volumes:
+  dados:
