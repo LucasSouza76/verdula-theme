@@ -5,8 +5,8 @@
 <h1 align="center">Verdula</h1>
 
 <p align="center">
-  A Dracula-inspired dark theme for VS Code, reimagined in deep forest greens.<br>
-  Um tema escuro para o VS Code inspirado no Dracula, reinventado em tons de verde-floresta.
+  A Dracula-inspired theme for VS Code, reimagined in deep forest greens. Also in black, gray, purple and light.<br>
+  Um tema para o VS Code inspirado no Dracula, reinventado em tons de verde-floresta. Também em preto, cinza, roxo e claro.
 </p>
 
 <p align="center">
@@ -50,6 +50,33 @@
   </tr>
 </table>
 
+### Variants · Variações
+
+<table>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/LucasSouza76/verdula-theme/main/images/variants/verdula.png" alt="Verdula"></td>
+    <td><img src="https://raw.githubusercontent.com/LucasSouza76/verdula-theme/main/images/variants/verdula-black.png" alt="Verdula Black"></td>
+  </tr>
+  <tr>
+    <td align="center">Verdula</td>
+    <td align="center">Verdula Black</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/LucasSouza76/verdula-theme/main/images/variants/verdula-gray.png" alt="Verdula Gray"></td>
+    <td><img src="https://raw.githubusercontent.com/LucasSouza76/verdula-theme/main/images/variants/verdula-purple.png" alt="Verdula Purple"></td>
+  </tr>
+  <tr>
+    <td align="center">Verdula Gray</td>
+    <td align="center">Verdula Purple</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/LucasSouza76/verdula-theme/main/images/variants/verdula-light.png" alt="Verdula Light"></td>
+  </tr>
+  <tr>
+    <td align="center">Verdula Light</td>
+  </tr>
+</table>
+
 ---
 
 ## English
@@ -61,33 +88,52 @@ Verdula takes the vibrant, high-contrast spirit of [Dracula](https://draculathem
 - Three shades of green (emerald, jade and lime) for functions, types and strings.
 - Soft rose, amber and lavender accents, so the code never turns into a single shade of green.
 
-Every syntax color has a contrast ratio above 5:1 against the editor background, so it stays comfortable during long coding sessions.
+Every syntax color has a contrast ratio of at least 5:1 against the editor background, in every variant, so it stays comfortable during long coding sessions.
+
+### Variants
+
+Prefer a different background? Verdula comes in five versions. The syntax colors are the same in all of them; only the background changes.
+
+| Theme | Background |
+| --- | --- |
+| **Verdula** | deep forest green (main) |
+| **Verdula Black** | near black |
+| **Verdula Gray** | dark gray |
+| **Verdula Purple** | dark purple |
+| **Verdula Light** | white, with the same hues darkened for contrast |
 
 ### Installation
 
 1. Open VS Code and go to **Extensions** (`Cmd+Shift+X` on macOS, `Ctrl+Shift+X` on Windows/Linux).
 2. Search for **Verdula** and click **Install**.
-3. Open the Command Palette, run **Preferences: Color Theme** and choose **Verdula**.
+3. Open the Command Palette, run **Preferences: Color Theme** and choose **Verdula** or one of its variants.
 
 ### Palette
 
-| Role | Color | Used for |
-| --- | --- | --- |
-| Editor background | `#0D1D15` | code area |
-| Sidebar / panel background | `#0A1711` | explorer, terminal, widgets |
-| Darkest background | `#06100B` | title bar, activity bar, status bar |
-| Current line | `#143024` | cursor line highlight |
-| Selection | `#245038` | selected text |
-| Foreground | `#EDF5F0` | interface text, folders and files |
-| Comments | `#6A9A80` | comments (moss green) |
-| Emerald | `#5BD98C` | functions, cursor, UI highlights |
-| Jade | `#4CC9A6` | classes and types |
-| Lime | `#B5DD6E` | strings |
-| Soft rose | `#E3809B` | keywords, HTML tags |
-| Amber | `#E5B567` | numbers and constants |
-| Lavender | `#A79BE3` | parameters |
-| Terracotta | `#E8925F` | warnings |
-| Coral | `#EF6F6C` | errors, regex |
+**Backgrounds and text**
+
+| Role | Verdula | Black | Gray | Purple | Light |
+| --- | --- | --- | --- | --- | --- |
+| Editor | `#0D1D15` | `#0B0B0B` | `#1E1F20` | `#1A1724` | `#FFFFFF` |
+| Sidebar / panel | `#0A1711` | `#060606` | `#191A1B` | `#14121C` | `#F3F3F3` |
+| Title, activity and status bars | `#06100B` | `#000000` | `#131415` | `#0E0C14` | `#EBEBEB` |
+| Current line | `#143024` | `#1D1D1D` | `#2D2F31` | `#2B263B` | `#F2F2F2` |
+| Selection | `#245038` | `#3C3C3C` | `#47494D` | `#483F63` | `#CCE8D5` |
+| Foreground | `#EDF5F0` | `#F3F3F3` | `#F2F3F3` | `#F3F2F6` | `#1F1F1F` |
+| Comments | `#6A9A80` | `#8D8D8D` | `#8B8E92` | `#8F8AA1` | `#6E6E6E` |
+
+**Syntax colors**
+
+| Name | Dark variants | Light | Used for |
+| --- | --- | --- | --- |
+| Emerald | `#5BD98C` | `#008136` | functions, cursor, UI highlights |
+| Jade | `#4CC9A6` | `#007F5E` | classes and types |
+| Lime | `#B5DD6E` | `#567A00` | strings |
+| Soft rose | `#E3809B` | `#AF4D6B` | keywords, HTML tags |
+| Amber | `#E5B567` | `#956600` | numbers and constants |
+| Lavender | `#A79BE3` | `#7365AC` | parameters |
+| Terracotta | `#E8925F` | `#AD581D` | warnings |
+| Coral | `#EF6F6C` | `#C34042` | errors, regex |
 
 ### Feedback
 
@@ -108,33 +154,52 @@ O Verdula leva o espírito vibrante e de alto contraste do [Dracula](https://dra
 - Três tons de verde (esmeralda, jade e lima) para funções, tipos e strings.
 - Destaques em rosa-antigo, âmbar e lavanda, para o código nunca virar um tom só de verde.
 
-Todas as cores do código têm contraste acima de 5:1 em relação ao fundo do editor, o que deixa a leitura confortável em longas sessões de programação.
+Todas as cores do código têm contraste de pelo menos 5:1 em relação ao fundo do editor, em todas as variações, o que deixa a leitura confortável em longas sessões de programação.
+
+### Variações
+
+Prefere outro fundo? O Verdula tem cinco versões. As cores do código são as mesmas em todas; só o fundo muda.
+
+| Tema | Fundo |
+| --- | --- |
+| **Verdula** | verde-floresta (principal) |
+| **Verdula Black** | quase preto |
+| **Verdula Gray** | cinza escuro |
+| **Verdula Purple** | roxo escuro |
+| **Verdula Light** | branco, com os mesmos tons escurecidos para dar contraste |
 
 ### Instalação
 
 1. Abra o VS Code e vá em **Extensions** (`Cmd+Shift+X` no macOS, `Ctrl+Shift+X` no Windows/Linux).
 2. Pesquise por **Verdula** e clique em **Install**.
-3. Abra a paleta de comandos, rode **Preferences: Color Theme** e escolha **Verdula**.
+3. Abra a paleta de comandos, rode **Preferences: Color Theme** e escolha **Verdula** ou uma das variações.
 
 ### Paleta
 
-| Papel | Cor | Uso |
-| --- | --- | --- |
-| Fundo do editor | `#0D1D15` | área de código |
-| Fundo da lateral/painel | `#0A1711` | explorer, terminal, widgets |
-| Fundo mais escuro | `#06100B` | barra de título, barra de atividades, status |
-| Linha atual | `#143024` | destaque da linha do cursor |
-| Seleção | `#245038` | texto selecionado |
-| Texto | `#EDF5F0` | texto da interface, pastas e arquivos |
-| Comentários | `#6A9A80` | comentários (verde-musgo) |
-| Esmeralda | `#5BD98C` | funções, cursor, destaques da interface |
-| Jade | `#4CC9A6` | classes e tipos |
-| Lima | `#B5DD6E` | strings |
-| Rosa-antigo | `#E3809B` | palavras-chave, tags HTML |
-| Âmbar | `#E5B567` | números e constantes |
-| Lavanda | `#A79BE3` | parâmetros |
-| Laranja-terra | `#E8925F` | avisos |
-| Coral | `#EF6F6C` | erros, regex |
+**Fundos e texto**
+
+| Papel | Verdula | Black | Gray | Purple | Light |
+| --- | --- | --- | --- | --- | --- |
+| Editor | `#0D1D15` | `#0B0B0B` | `#1E1F20` | `#1A1724` | `#FFFFFF` |
+| Lateral / painel | `#0A1711` | `#060606` | `#191A1B` | `#14121C` | `#F3F3F3` |
+| Barras de título, atividades e status | `#06100B` | `#000000` | `#131415` | `#0E0C14` | `#EBEBEB` |
+| Linha atual | `#143024` | `#1D1D1D` | `#2D2F31` | `#2B263B` | `#F2F2F2` |
+| Seleção | `#245038` | `#3C3C3C` | `#47494D` | `#483F63` | `#CCE8D5` |
+| Texto | `#EDF5F0` | `#F3F3F3` | `#F2F3F3` | `#F3F2F6` | `#1F1F1F` |
+| Comentários | `#6A9A80` | `#8D8D8D` | `#8B8E92` | `#8F8AA1` | `#6E6E6E` |
+
+**Cores do código**
+
+| Nome | Variações escuras | Light | Uso |
+| --- | --- | --- | --- |
+| Esmeralda | `#5BD98C` | `#008136` | funções, cursor, destaques da interface |
+| Jade | `#4CC9A6` | `#007F5E` | classes e tipos |
+| Lima | `#B5DD6E` | `#567A00` | strings |
+| Rosa-antigo | `#E3809B` | `#AF4D6B` | palavras-chave, tags HTML |
+| Âmbar | `#E5B567` | `#956600` | números e constantes |
+| Lavanda | `#A79BE3` | `#7365AC` | parâmetros |
+| Laranja-terra | `#E8925F` | `#AD581D` | avisos |
+| Coral | `#EF6F6C` | `#C34042` | erros, regex |
 
 ### Sugestões
 
