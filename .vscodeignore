@@ -1,7 +1,9 @@
 .vscode/**
 .gitignore
-exemplos/**
+examples/**
 images/*-example.png
-PUBLICAR.md
+images/variants/**
+PUBLISHING.md
 *.vsix
 images/icon-original.png
+scripts/**

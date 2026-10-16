@@ -1,7 +1,7 @@
 {
   "name": "verdula-theme",
   "displayName": "Verdula",
-  "description": "Tema escuro verde-floresta, com tons de esmeralda, jade e lima.",
+  "description": "A Dracula-inspired forest green theme with emerald, jade and lime tones. Also available in black, gray, purple and light variants.",
   "version": "0.0.3",
   "publisher": "lucassouza76",
   "author": {
@@ -30,20 +30,51 @@
   "keywords": [
     "theme",
     "dark theme",
+    "light theme",
     "green",
     "forest",
     "emerald",
     "dracula",
-    "verde",
-    "tema escuro"
+    "black",
+    "gray",
+    "purple"
   ],
+  "scripts": {
+    "build": "node scripts/build-themes.js",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
   "contributes": {
     "themes": [
       {
         "label": "Verdula",
         "uiTheme": "vs-dark",
         "path": "./themes/verdula-color-theme.json"
+      },
+      {
+        "label": "Verdula Black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/verdula-black-color-theme.json"
+      },
+      {
+        "label": "Verdula Gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/verdula-gray-color-theme.json"
+      },
+      {
+        "label": "Verdula Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/verdula-purple-color-theme.json"
+      },
+      {
+        "label": "Verdula Light",
+        "uiTheme": "vs",
+        "path": "./themes/verdula-light-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "puppeteer-core": "^25.14.0",
+    "shiki": "^4.5.0"
   }
 }
