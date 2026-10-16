@@ -11,11 +11,10 @@ Use **Developer: Inspect Editor Tokens and Scopes** para descobrir qual escopo c
 ## Tirar os prints
 
 1. Em **Run and Debug**, escolha **Tirar prints (sem outras extensões)** e pressione `F5`. Assim a barra de status fica limpa, sem ícones de outras extensões.
-2. Abra um arquivo de `exemplos/` e tire o print com `Cmd+Shift+4` e depois `Espaço` (captura a janela inteira).
-3. Salve em `images/` com estes nomes, que são os usados no README:
-   - `preview-typescript.png` (sugestão: `exemplos/typescript/demo.ts`)
-   - `preview-react.png` (sugestão: `exemplos/react/Painel.tsx`)
-   - `preview-python.png` (sugestão: `exemplos/python/analise.py`)
+2. Abra um arquivo de `exemplos/` e tire o print.
+3. Salve em `images/` com o nome `<linguagem>-example.png` (ex.: `go-example.png`) e adicione a imagem na galeria do `README.md`.
+
+As imagens do README usam links absolutos (`https://raw.githubusercontent.com/LucasSouza76/verdula-theme/main/images/...`), então precisam estar no GitHub antes de publicar a nova versão.
 
 ## Publicar no Marketplace
 
