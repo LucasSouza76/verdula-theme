@@ -1,7 +1,7 @@
 .vscode/**
 .gitignore
 exemplos/**
-images/preview-*.png
+images/*-example.png
 PUBLICAR.md
 *.vsix
 images/icon-original.png
