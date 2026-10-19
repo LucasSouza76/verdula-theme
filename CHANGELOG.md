@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.5
+
+- New variants: Verdula Burgundy, with a dark burgundy red background (and lighter rose and coral for contrast), and Verdula Ocean, with a deep sea blue background.
+- Functions and methods use a new, lighter mint green (`#A3EFC0`) in the dark variants, for more contrast against the background. Verdula Light is unchanged.
+
 ## 0.0.4
 
 - New variants: Verdula Black, Verdula Gray, Verdula Purple and Verdula Light. Same syntax colors, different backgrounds.
