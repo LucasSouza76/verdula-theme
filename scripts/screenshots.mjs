@@ -34,6 +34,8 @@ const VARIANTS = [
   { theme: "verdula-black", out: "images/variants/verdula-black.png" },
   { theme: "verdula-gray", out: "images/variants/verdula-gray.png" },
   { theme: "verdula-purple", out: "images/variants/verdula-purple.png" },
+  { theme: "verdula-burgundy", out: "images/variants/verdula-burgundy.png" },
+  { theme: "verdula-ocean", out: "images/variants/verdula-ocean.png" },
   { theme: "verdula-light", out: "images/variants/verdula-light.png" },
 ];
 const VARIANT_SNIPPET = { file: "examples/typescript/demo.ts", lang: "typescript", lines: 30 };

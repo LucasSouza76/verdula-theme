@@ -8,7 +8,7 @@
 
 Use **Developer: Inspect Editor Tokens and Scopes** to find out which scope controls the color of a piece of code.
 
-## Variants (Black, Gray, Purple, Light)
+## Variants (Black, Gray, Purple, Burgundy, Ocean, Light)
 
 The variants are generated from `themes/verdula-color-theme.json`. Don't edit the other files in `themes/` by hand.
 
@@ -45,6 +45,6 @@ The README images use absolute links (`https://raw.githubusercontent.com/LucasSo
 
 ## Publishing a new version
 
-1. Bump `"version"` in `package.json` (e.g. `0.0.4`) and write down the changes in `CHANGELOG.md`.
+1. Bump `"version"` in `package.json` (e.g. `0.0.5`) and write down the changes in `CHANGELOG.md`.
 2. Run `npm run build` and then `npx @vscode/vsce package`.
 3. In the Marketplace dashboard, click the `...` next to the extension → **Update** and upload the new `.vsix`.
