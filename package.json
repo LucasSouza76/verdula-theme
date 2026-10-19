@@ -1,7 +1,7 @@
 {
   "name": "verdula-theme",
   "displayName": "Verdula",
-  "description": "A Dracula-inspired forest green theme with emerald, jade and lime tones. Also available in black, gray, purple and light variants.",
+  "description": "A Dracula-inspired forest green theme with emerald, jade and lime tones. Also available in black, gray, purple, burgundy, ocean and light variants.",
   "version": "0.0.4",
   "publisher": "lucassouza76",
   "author": {
@@ -37,7 +37,10 @@
     "dracula",
     "black",
     "gray",
-    "purple"
+    "purple",
+    "burgundy",
+    "ocean",
+    "blue"
   ],
   "scripts": {
     "build": "node scripts/build-themes.js",
@@ -64,6 +67,16 @@
         "label": "Verdula Purple",
         "uiTheme": "vs-dark",
         "path": "./themes/verdula-purple-color-theme.json"
+      },
+      {
+        "label": "Verdula Burgundy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/verdula-burgundy-color-theme.json"
+      },
+      {
+        "label": "Verdula Ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/verdula-ocean-color-theme.json"
       },
       {
         "label": "Verdula Light",

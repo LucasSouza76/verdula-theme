@@ -376,7 +376,7 @@
     {
       "name": "Functions",
       "scope": ["entity.name.function", "support.function", "meta.function-call entity.name.function", "variable.function"],
-      "settings": { "foreground": "#5BD98C" }
+      "settings": { "foreground": "#A3EFC0" }
     },
     {
       "name": "Classes and types",
@@ -518,8 +518,8 @@
     "enumMember": "#E5B567",
     "type": "#4CC9A6",
     "typeParameter": { "foreground": "#4CC9A6", "italic": true },
-    "function": "#5BD98C",
-    "method": "#5BD98C",
+    "function": "#A3EFC0",
+    "method": "#A3EFC0",
     "parameter": { "foreground": "#A79BE3", "italic": true },
     "property": "#F2F3F3",
     "variable": "#F2F3F3",

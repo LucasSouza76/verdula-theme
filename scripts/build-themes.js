@@ -3,8 +3,10 @@
 // themes/verdula-color-theme.json is the source. Edit only that file and run
 // `npm run build` to update the variants. Each variant swaps the background
 // colors and neutral tones (text, borders, comments) for the ones in its `map`
-// table. In the dark variants, accent and syntax colors stay the same. In the
-// light variant, they are darkened (same hue) so they have contrast on white.
+// table. In the dark variants, accent and syntax colors stay the same, except
+// where a variant's background hue clashes with one of them (Burgundy lightens
+// its rose and coral). In the light variant, they are darkened (same hue) so
+// they have contrast on white.
 
 const fs = require("fs");
 const path = require("path");
@@ -16,7 +18,7 @@ const SOURCE = path.join(THEMES_DIR, "verdula-color-theme.json");
 const ACCENTS = [
   "#5BD98C", "#7FE6A6", "#4CC9A6", "#B5DD6E", "#E3809B", "#E5B567", "#A79BE3",
   "#E8925F", "#EF6F6C", "#8FA8E8", "#F59A97", "#D2EE98", "#C2B8F0", "#F0A3B8",
-  "#7FE3C4", "#FFFFFF", "#000000", "#0F3329", "#3A1418", "#3A2A12",
+  "#7FE3C4", "#A3EFC0", "#FFFFFF", "#000000", "#0F3329", "#3A1418", "#3A2A12",
 ];
 
 const VARIANTS = [
@@ -81,6 +83,52 @@ const VARIANTS = [
     },
   },
   {
+    file: "verdula-burgundy-color-theme.json",
+    name: "Verdula Burgundy",
+    type: "dark",
+    map: {
+      "#06100B": "#100407",
+      "#0A1711": "#1A070C",
+      "#0D1D15": "#230B11",
+      "#143024": "#3B121C",
+      "#18352A": "#421520",
+      "#1C4030": "#521927",
+      "#245038": "#6F2034",
+      "#2A5A43": "#7E263C",
+      "#356D52": "#97304A",
+      "#4A7A62": "#8A606B",
+      "#6A9A80": "#A28B91",
+      "#9DBBAA": "#BFB0B4",
+      "#EDF5F0": "#F7F3F4",
+      // Rose and coral share the background's red hue and blend into it, so
+      // they are lighter (and rose a bit pinker) in this variant.
+      "#E3809B": "#FAA8CA",
+      "#F0A3B8": "#FCC5D9",
+      "#EF6F6C": "#FC9C92",
+      "#F59A97": "#FDB8B0",
+    },
+  },
+  {
+    file: "verdula-ocean-color-theme.json",
+    name: "Verdula Ocean",
+    type: "dark",
+    map: {
+      "#06100B": "#071018",
+      "#0A1711": "#0C1822",
+      "#0D1D15": "#10202D",
+      "#143024": "#193248",
+      "#18352A": "#1E374D",
+      "#1C4030": "#22425D",
+      "#245038": "#2A5479",
+      "#2A5A43": "#325F86",
+      "#356D52": "#3D719E",
+      "#4A7A62": "#647687",
+      "#6A9A80": "#8797A6",
+      "#9DBBAA": "#ADB8C2",
+      "#EDF5F0": "#F3F5F7",
+    },
+  },
+  {
     file: "verdula-light-color-theme.json",
     name: "Verdula Light",
     type: "light",
@@ -120,6 +168,7 @@ const VARIANTS = [
       "#C2B8F0": "#72679C",
       "#F0A3B8": "#A2596F",
       "#7FE3C4": "#007D61",
+      "#A3EFC0": "#008136", // functions: same as emerald, already high contrast on white
     },
     // Keys where a direct color swap doesn't work on a light background.
     overrides: {
